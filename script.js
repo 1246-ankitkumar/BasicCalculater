@@ -15,7 +15,9 @@ buttons.forEach((btn) => {
     if (value === "=") {
       try {
         result.innerText=result.innerText.replace('x','*');
-        result.innerText = eval(result.innerText);
+        let m = eval(result.innerText);
+        m=m.toFixed(4);
+        result.innerText=m;
       } catch (e) {
         result.innerText = "Error";
       }
@@ -30,4 +32,5 @@ buttons.forEach((btn) => {
     }
   });
 });
+
 
