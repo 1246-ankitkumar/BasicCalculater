@@ -1,0 +1,105 @@
+.calculater{
+    display:grid;
+    grid-template-columns: repeat(4,3fr);
+    background-color: rgb(11, 11, 11);
+    border:5px solid black;
+    color:white;
+    padding:0.2rem;
+    gap:10px;
+    height:600px;
+    width:500px;
+    -ms-layout-grid-mode: flex 1 1 auto;
+    margin-left: 2rem;
+    border-radius: 2rem;
+    
+    
+}
+.Number{
+   border:3px solid white;
+   border-radius:30px;
+   display:flex;
+   align-items:center;
+   justify-content: center;
+   margin-top:10px;
+   box-sizing: border-box;
+   font-size: 3rem;
+   
+}
+
+.Result{
+    grid-column-start:1;
+    grid-column-end:5;
+    background-color: rgb(0, 45, 55);
+    border-radius: 10px;
+    display:flex;
+   align-items:center;
+   justify-content: flex-end;
+   padding-right: 5rem;
+   height:100px;
+   font-size:3rem;
+   margin-top:10px;
+   
+
+}
+
+
+.Number:hover{
+    box-shadow: 2px 2px 10px yellow;
+   transform:scale(1.01);
+   background-color: green;
+
+    
+}
+.Number9{
+    grid-column-start:1;
+    grid-column-end:5;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+
+}
+#eqal{
+    grid-column-start: 3;
+    grid-column-end:5;
+
+}
+#text{
+    grid-column-start:1;
+    grid-column-end:5;
+    flex-wrap: wrap;
+    
+}
+
+.container{
+    display:flex;
+    margin-top:10vh;
+    flex-wrap: wrap;
+}
+.cartoon{
+    height:300px;
+    width:300px;
+
+}
+img{
+     height:400px;
+    width:400px;
+
+}
+.text{
+    font-size:4rem;
+    font-family: 'Loopiejuice', sans-serif;
+    font-weight: 1000;
+    color:black;
+    margin-left: 9rem;
+    margin-top: 6rem;
+}
+.heading{
+    font-size: 4rem;
+    background-color: rgb(22, 1, 41);
+    color:white;
+    padding-left: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:5rem;
+}
